@@ -27,8 +27,8 @@ public class Login extends AppCompatActivity {
         ImageView fondo = findViewById(R.id.tree);
 
         Glide.with(this)
-            // .load("https://images.unsplash.com/photo-1565214975484-3cfa9e56f914?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1482&q=80")
-              .load(R.drawable.tree)
+             .load("https://images.unsplash.com/photo-1565214975484-3cfa9e56f914?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1482&q=80")
+             // .load(R.drawable.tree)
                 .transition(DrawableTransitionOptions.withCrossFade(100))
 
 //                .centerCrop()
@@ -36,6 +36,17 @@ public class Login extends AppCompatActivity {
 //                .circleCrop()
                 .into(fondo);
 
+        ImageView logo = findViewById(R.id.logo);
+
+        Glide.with(this)
+                //.load("https://static3.leonoticias.com/www/multimedia/202107/06/media/MM-senderismo-asturias/oddle-1-ksRC--1350x900@El%20Comercio.jpg")
+                .load(R.drawable.persona)
+                .transition(DrawableTransitionOptions.withCrossFade(100))
+
+//                .centerCrop()
+//                .placeholder(new ColorDrawable(this.getResources().getColor(R.color.fucsia_200)))
+                .circleCrop()
+                .into(logo);
 
 
 
