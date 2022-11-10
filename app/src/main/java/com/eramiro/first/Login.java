@@ -39,7 +39,7 @@ public class Login extends AppCompatActivity {
         ImageView logo = findViewById(R.id.logo);
 
         Glide.with(this)
-                //.load("https://static3.leonoticias.com/www/multimedia/202107/06/media/MM-senderismo-asturias/oddle-1-ksRC--1350x900@El%20Comercio.jpg")
+              //.load("https://static3.leonoticias.com/www/multimedia/202107/06/media/MM-senderismo-asturias/oddle-1-ksRC--1350x900@El%20Comercio.jpg")
                 .load(R.drawable.persona)
                 .transition(DrawableTransitionOptions.withCrossFade(100))
 
