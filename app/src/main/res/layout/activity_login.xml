@@ -12,9 +12,10 @@
         android:id="@+id/tree"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:scaleType="fitStart"
+        android:scaleType="fitXY"
         />
-<!--    android:src="@drawable/girl"-->
+    <!--FitXY para que la imagen ocupe toda la pantalla-->
+
 
 
     <ImageView
@@ -32,7 +33,6 @@
         android:layout_height="match_parent"
         android:alpha="0.1"
         android:background="@drawable/gradient">
-
     </View>
 
 
